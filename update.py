@@ -7,8 +7,8 @@ BASE_DIR = os.getenv('BASE_DIR')
 readme_dir = os.path.join(BASE_DIR, 'readmes-update')
 
 # Set the GITHUB_USERNAME and GITHUB_TOKEN environment variables
-username = os.environ['GITHUB_USERNAME']
-token = os.environ['GITHUB_TOKEN']
+username = os.getenv['GITHUB_USERNAME']
+token = os.getenv['GITHUB_TOKEN']
 
 check_interval = 3600  # Check every hour
 os.makedirs(readme_dir, exist_ok=True)
