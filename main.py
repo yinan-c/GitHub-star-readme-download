@@ -27,7 +27,7 @@ def download_readme(repo_full_name):
 
 starred_repos = get_starred_repos(username)
 
-readme_dir = 'readmes'
+readme_dir = 'readmes-oneoff'
 os.makedirs(readme_dir, exist_ok=True)
 
 for repo in starred_repos:
