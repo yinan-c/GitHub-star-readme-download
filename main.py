@@ -2,8 +2,8 @@ import requests
 import os
 
 # Set the GITHUB_USERNAME and GITHUB_TOKEN environment variables
-username = os.getenv['GITHUB_USERNAME']
-token = os.getenv['GITHUB_TOKEN']
+username = os.getenv('GITHUB_USERNAME')
+token = os.getenv('GITHUB_TOKEN')
 
 session = requests.Session()
 session.auth = (username, token)
